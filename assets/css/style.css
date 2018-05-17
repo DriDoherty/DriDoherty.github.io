@@ -1,0 +1,365 @@
+/* Style sheet for Basic Portfolio Project */
+
+/* general formatting */
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/background.png");
+    color: #777777;
+    height: 100%;
+    margin: auto;
+/* flexbox solution for sticky footer */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid lightgrey;
+    padding: 20px 0px;
+}
+
+h3 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    font-size: 20px;
+}
+
+/* header & navigation bar formatting */
+
+header {
+    width: 100%;
+    text-align: center;
+    background:#ffffff;
+    color: #777777;
+    border-bottom: 2px solid #cccccc;
+}
+
+nav {
+    width: 940px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav_name {
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #777777;
+    text-decoration: none;
+    height: 80px;
+    padding: 30px 10px;
+}
+
+li a:visited {
+    color: #777777;
+}
+
+li a:hover {
+    background-color: #4aaaa5;
+    color:#ffffff;
+}
+
+/* general formatting for center section of all pages */
+
+section {
+    background:#ffffff;
+    color: #777777;
+    width: 940px;
+    margin: 30px auto;
+    padding: 20px;
+/* flexbox solution for sticky footer */
+    flex: 1;
+}
+
+/* formatting for About Me page article */
+
+.image-left {
+    float: left;
+    padding: 30px 5px 5px 0px;
+    margin-right: 20px;
+}
+
+.wrap-text {
+    padding: 30px 0px;
+    line-height: 30px;
+}
+
+/* formatting for contact form */
+
+#ContactForm {
+    padding: 20px 0px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: #40928e;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 18px 13px;
+}
+
+/* formatting for Portfolio gallery page */
+
+#project-container {
+    background-color: #ffffff;
+    width: 940px;
+    height: 860px;
+}
+
+.row {
+    position: relative;
+    background-color: #ffffff;
+    left: 0px;
+}
+
+.row1 {
+    margin-top: 20px;
+}
+
+.row2 {
+    margin-top: 260px;
+}
+
+.row3 {
+    margin-top: 500px;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    z-index: 0;
+}
+
+.project-image-left {
+    left: 0px;
+}
+
+.project-image-right {
+    left: 340px;
+}
+
+.project-image-link:hover {
+    border: 5px solid #4aaaa5;
+}
+
+.project-label {
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+}
+
+.project-label-left {
+    left: 0;
+}
+
+.project-label-right {
+    left: 340px;
+}
+
+.project-label-link:hover {
+    background-color: #40928e;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* formatting for footer */
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    background-color:#666666;
+    color:lightgrey;
+    padding: 17px;
+    border-top: 5px solid #4aaaa5;
+}
+
+/* specific styles to support smaller screens */
+
+@media only screen and (max-width: 980px) {
+    nav {
+        width: 720px;
+    }
+
+    section {
+        width: 720px;
+    }
+
+    #project-container {
+        width: 720px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        width: 620px;
+    }
+
+    section {
+        width: 620px;
+    }
+
+    #project-container {
+        width: 620px;
+    }
+
+    .row2 {
+        margin-top: 230px;
+    }
+    
+    .row3 {
+        margin-top: 440px;
+    }
+    
+    .project-image {
+        width: 250px;
+        height: 175px;
+        top: 15px;
+    }
+    
+    .project-image-right {
+        left: 275px;
+    }
+
+    .project-label {
+        width: 250px;
+        height: 30px;
+        padding: 6px;
+        top: 155px;
+    }
+    
+    .project-label-right {
+        left: 275px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    nav {
+        width: 100%;
+        height: 160px;
+    }
+
+    #nav_name {
+        font-size: 40px;
+        background: #4aaaa5;
+        color: #ffffff;
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+    
+    ul {
+        position: absolute;
+        right: 0;
+    }
+
+    li {
+        margin-top: 80px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #project-container {
+        width: 100%;
+        height: 1200px;
+    }
+
+    .row2 {
+        margin-top: 440px;
+    }
+    
+    .row3 {
+        margin-top: 860px;
+    }
+    
+    .project-image {
+        width: 300px;
+        height: 200px;
+        top: 20px;
+    }
+    
+    .project-image-right {
+        left: 0px;
+        margin-top: 210px;
+    }
+    
+    .project-label {
+        padding: 15px;
+        width: 300px;
+        height: 50px;
+        top: 160px;
+    }
+        
+    .project-label-right {
+        left: 0px;
+        margin-top: 210px;        
+    }
+}
