@@ -24,12 +24,7 @@ body {
     flex-direction: column;
 }
 
-h1, h4, h5, h6 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-}
-
 h2 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
     font-size: 25px;
     font-weight: bold;
@@ -38,8 +33,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #ffffff;
+    color: #f5f5f5;
     background-color: #4aaaa5;
     font-size: 20px;
 }
@@ -49,14 +43,14 @@ h3 {
 header {
     width: 100%;
     text-align: center;
-    background:#ffffff;
+    background: #f5f5f5;
     color: #777777;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #4aaaa5;
 }
 
 nav {
     width: 940px;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     position: relative;
 }
@@ -64,10 +58,10 @@ nav {
 #nav_name {
     position: absolute;
     left: 0;
-    font-size: 40px;
+    font-size: 30px;
     background: #4aaaa5;
-    color: #ffffff;
-    padding: 20px;
+    color: #f5f5f5;
+    padding: 15px;
     letter-spacing: 1px;
 }
 
@@ -81,12 +75,21 @@ li {
     float: left;
 }
 
+li span {
+    display: block;
+    font-weight: bold;
+    color: #777777;
+    text-shadow: 4px 4px 12px #40928e;
+    height: 60px;
+    padding: 20px 10px;
+}
+
 li a {
     display: block;
     color: #777777;
     text-decoration: none;
-    height: 80px;
-    padding: 30px 10px;
+    height: 60px;
+    padding: 20px 10px;
 }
 
 li a:visited {
@@ -95,13 +98,13 @@ li a:visited {
 
 li a:hover {
     background-color: #4aaaa5;
-    color:#ffffff;
+    color:#c0c0c0;
 }
 
 /* general formatting for center section of all pages */
 
 section {
-    background:#ffffff;
+    background:#f5f5f5;
     color: #777777;
     width: 940px;
     margin: 30px auto;
@@ -114,12 +117,16 @@ section {
 
 .image-left {
     float: left;
-    padding: 30px 5px 5px 0px;
-    margin-right: 20px;
+    border: 1px solid #666666;
+    box-shadow: 3px 3px 6px #777777;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 5px;
 }
 
 .wrap-text {
-    padding: 30px 0px;
+    padding-top: 25px;
     line-height: 30px;
 }
 
@@ -141,8 +148,8 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color:#4aaaa5;
-    color: white;
+    background-color: #4aaaa5;
+    color: #f5f5f5;
     padding: 20px;
     border: none;
     border-radius: 4px;
@@ -160,14 +167,14 @@ input[type=submit]:hover {
 /* formatting for Portfolio gallery page */
 
 #project-container {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     width: 940px;
     height: 860px;
 }
 
 .row {
     position: relative;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     left: 0px;
 }
 
@@ -231,14 +238,17 @@ input[type=submit]:hover {
 
 footer {
     width: 100%;
-    height: 50px;
+    height: 25px; /* Set the fixed height of the footer here */
+    line-height: 23px; /* Vertically center the text here (footer height-border) */
     text-align: center;
     font-size: 12px;
-    background-color:#666666;
-    color:lightgrey;
-    padding: 17px;
-    border-top: 5px solid #4aaaa5;
+    background-color: #777777;
+    color: #ccc;
+    border-top: 2px solid #40928e;
 }
+    /*
+    padding: 17px;
+}*/
 
 /* specific styles to support smaller screens */
 
@@ -309,7 +319,7 @@ footer {
     #nav_name {
         font-size: 40px;
         background: #4aaaa5;
-        color: #ffffff;
+        color: #f5f5f5;
         padding: 20px;
         letter-spacing: 1px;
     }
