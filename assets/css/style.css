@@ -325,14 +325,23 @@ footer {
         width: 100%;
         padding: 15px;
     }
-    
-    ul {
-        position: unset;
-        right: unset;
-        align-content: center;
+
+    #nav_menu{
+        float:right;
+        position:relative;
+        left:-50%;
+        text-align:left;
     }
 
-    li {
+    #nav_menu ul{
+        list-style:none;
+        position:relative;
+        left:50%;
+    }
+
+    #nav_menu li{
+        float:left;
+        position:relative; /* ie needs position:relative here*/
         margin-top: 55px;
     }
 
