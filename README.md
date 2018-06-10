@@ -1,10 +1,5 @@
 # Responsive-Portfolio
-HW2 - responsive portfolio of projects site
 
-Updated styling on basic-portfolio site to make site responsive to different screen sizes based on 980px full size, 768px tablet landscape, 640px phone landscape;
+This is the landing "site" for my hosted pages on GitHub. It was originally built as one of the initial HW assignments for the Rutgers Coding Bootcamp program, as a responsive 3-page website.  That original assignment is still available at https://dridoherty.github.io/Responsive-Portfolio.
 
-Known issues:
-
-- still need to add basic '|' divider between navigation bar selection items and have it float properly between the anchors
-
-- still need to correct styling for screens of max-width 640px to have name on navbar take up entire width, centered and navigation menu items center on entire width
+The landing "site" has evolved over time to incorporate better visuals, links and responsiveness. All the projects that I've built as part of the Rutgers Coding Bootcamp program have links on the Porfolio page.
