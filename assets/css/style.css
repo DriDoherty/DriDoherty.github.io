@@ -1,7 +1,9 @@
 /* general formatting */
 
-* {
-    box-sizing: border-box;
+html {
+    /* styling for sticky footer */
+    position: relative;
+    min-height: 100%;
 }
 
 .clearfix::after {
@@ -16,10 +18,8 @@ body {
     color: #5d5c61;
     height: 100%;
     margin: auto;
-/* flexbox solution for sticky footer */
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    /* set margin to footer height */
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -106,10 +106,9 @@ li a {
     background: none;
     color: #5d5c61;
     width: 720px;
+    height: 820px;
     margin: 10px 20px;
     padding: 10px;
-/* flexbox solution for sticky footer */
-    flex: 1;
 }
 
 .row {
@@ -150,11 +149,11 @@ li a {
 .project-label {
     text-align: center;
     color: #c6c1c7;
-    padding: 15px;
-    width: 300px;
+    width: 302px;
     height: 50px;
+    line-height: 50px;
     position: absolute;
-    top: 162px;
+    top: 164px;
     z-index: 1;
 }
 
@@ -162,7 +161,7 @@ li a {
     left: 30px;
 }
 
-.project-label-right {
+    .project-label-right {
     left: 370px;
 }
 
@@ -176,6 +175,8 @@ li a {
 /* formatting for footer */
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 25px; /* Set the fixed height of the footer here */
     line-height: 23px; /* Vertically center the text here (footer height-border) */
@@ -212,10 +213,10 @@ footer {
     }
 
     .project-label {
-        width: 250px;
+        width: 252px;
         height: 30px;
-        padding: 6px;
-        top: 152px;
+        line-height: 30px;
+        top: 155px;
     }
     
     .project-label-right {
@@ -269,6 +270,7 @@ footer {
 
     #project-container {
         width: 360px;
+        height: 1240px;
     }
 
     .row2 {
@@ -291,10 +293,10 @@ footer {
     }
     
     .project-label {
-        padding: 15px;
-        width: 300px;
+        width: 302px;
         height: 50px;
-        top: 160px;
+        line-height: 50px;
+        top: 164px;
     }
         
     .project-label-right {
