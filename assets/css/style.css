@@ -106,7 +106,7 @@ li a {
     background: none;
     color: #5d5c61;
     width: 720px;
-    height: 1060px;
+    height: 1300px;
     margin: 10px auto;
     padding: 10px;
 }
@@ -131,6 +131,11 @@ li a {
 .row4 {
     margin-top: 740px;
 }
+
+.row5 {
+    margin-top: 980px;
+}
+
 .project-image {
     width: 300px;
     height: 200px;
@@ -209,6 +214,10 @@ footer {
         margin-top: 650px;
     }
 
+    .row5 {
+        margin-top: 860px;
+    }
+
     .project-image {
         width: 250px;
         height: 175px;
@@ -277,7 +286,7 @@ footer {
 
     #project-container {
         width: 360px;
-        height: 1560px;
+        height: 1980px;
     }
 
     .row2 {
@@ -291,7 +300,11 @@ footer {
     .row4 {
         margin-top: 1280px;
     }
-    
+
+    .row5 {
+        margin-top: 1700px;
+    }
+
     .project-image {
         width: 300px;
         height: 200px;
