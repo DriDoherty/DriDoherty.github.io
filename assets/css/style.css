@@ -106,7 +106,7 @@ li a {
     background: none;
     color: #5d5c61;
     width: 720px;
-    height: 1300px;
+    height: 1540px;
     margin: 10px auto;
     padding: 10px;
 }
@@ -134,6 +134,10 @@ li a {
 
 .row5 {
     margin-top: 980px;
+}
+
+.row6 {
+    margin-top: 1220px;
 }
 
 .project-image {
@@ -218,6 +222,10 @@ footer {
         margin-top: 860px;
     }
 
+    .row6 {
+        margin-top: 1070px;
+    }
+
     .project-image {
         width: 250px;
         height: 175px;
@@ -286,7 +294,7 @@ footer {
 
     #project-container {
         width: 360px;
-        height: 1980px;
+        height: 2570px;
     }
 
     .row2 {
@@ -303,6 +311,10 @@ footer {
 
     .row5 {
         margin-top: 1700px;
+    }
+
+    .row6 {
+        margin-top: 2120px;
     }
 
     .project-image {
