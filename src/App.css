@@ -1,0 +1,55 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family:'Philosopher', sans-serif;
+  background: #c5d0db;
+  color: #5d5c61;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #5d5c61;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid #5d5c61;
+  padding: 20px 0px;
+  margin-bottom: 0;
+}
+
+h3 {
+  background-color: #c5d0db;
+  color: #5d5c61;
+  font-family:'Shadows Into Light Two', cursive;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+h6 {
+  font-size: 18px;
+  text-align: left;
+  vertical-align: middle;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
