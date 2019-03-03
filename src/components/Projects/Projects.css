@@ -1,11 +1,25 @@
-.project-row {
-  margin: 15px 20px 0px 20px;
-  /* margin-left: 20px; */
+.individualProjects,
+.groupProjects {
+  background-color: #f4f9f4;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.projects_intro {
-  font-family: 'Philosopher', serif;
-  font-size: 20px;
-  font-weight: normal;
-  margin-top: 10px;
+#individualProj-carousel,
+#groupProject-carousel {
+  height: 375px;
+}
+
+.carousel-indicators li {
+  background-color: #a7d7c5;
+}
+
+.carousel-indicators .active {
+  background-color: #74b49b;
+}
+
+.caret-style {
+  color: #74b49b;
+  font-size: 2rem;
 }

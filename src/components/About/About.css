@@ -1,19 +1,19 @@
-.aboutMe {
-    margin-top: 15px;
-    margin-left: 20px;
+hr {
+    border-top-color: #74b49b;
+    border-top-style: dotted;
+    border-top-width: 7px;
+    width: 8%;
+    margin: 50px auto;
+  }
+  
+.greeting {
+    background-color: #f4f9f4;
+    margin: 0;
+    padding: 150px 0 60px;
     text-align: center;
 }
 
-#about_greeting {
-    font-family: Ruthie, cursive;
-    font-size: 75px;
-    padding-top: 100px;
-}
-
-#about_whoIam {
-    font-family: Ruthie, cursive;
-    font-size: 35px;
-    font-weight: normal;
-    padding-top: 0px;
-    padding-bottom: 100px;
+#aboutMe {
+    width: 40%;
+    margin: auto;
 }
